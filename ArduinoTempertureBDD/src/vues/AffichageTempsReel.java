@@ -17,7 +17,7 @@ public class AffichageTempsReel {
 	  public void go() {
 
 	    // Create Chart
-	    chart = QuickChart.getChart("Variation de la temperature selon le temps", "Temps", "Valeur", "randomWalk", new double[] { 0 }, new double[] { 0 });
+	    chart = QuickChart.getChart("Variation de la temperature selon le temps", "Axe Temp", "Valeur température", "randomWalk", new double[] { 0 }, new double[] { 0 });
 	    chart.getStyler().setLegendVisible(false);
 	    chart.getStyler().setXAxisTicksVisible(false);
 

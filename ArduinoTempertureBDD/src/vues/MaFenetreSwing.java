@@ -28,9 +28,8 @@ public class MaFenetreSwing extends SwingWorker<Boolean, double[]>  {
 	    	  fifo.add(lestemperatures.get(id).getValeur());
 	    	  System.out.println(lestemperatures.get(id).getValeur());
 	    	  id++;
-	        if (fifo.size() > 500) {
+	        if (fifo.size() > 30) {
 	          fifo.removeFirst();
-	          id=2;
 	        }
 
 	        double[] array = new double[fifo.size()];
@@ -44,7 +43,7 @@ public class MaFenetreSwing extends SwingWorker<Boolean, double[]>  {
 	        try {
 	          Thread.sleep(100);
 	        } catch (InterruptedException e) {
-	          System.out.println("MySwingWorker shut down.");
+	          System.out.println("Fenetre fermé.");
 	        }
 
 	      }
